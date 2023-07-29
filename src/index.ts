@@ -80,4 +80,4 @@ export const MulterStorageEngine = (opts: Options) => {
   });
 };
 
-export { CustomFileResult, FileType, Request };
+export { CustomFileResult, FileType, Request, Options };
