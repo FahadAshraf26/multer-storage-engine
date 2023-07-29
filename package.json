@@ -1,5 +1,5 @@
 {
-  "name": "@fahad/multer-storage-engine",
+  "name": "multer-storage-engine",
   "version": "1.0.0",
   "description": "Multer storage engine for GCP. Images upload through multer will directly upload to GCP",
   "main": "lib/index.js",
