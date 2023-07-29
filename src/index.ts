@@ -70,7 +70,7 @@ class CustomStorageEngine implements multer.StorageEngine {
   }
 }
 
-const storageEngine = (opts: Options) => {
+export const storageEngine = (opts: Options) => {
   return new CustomStorageEngine(opts);
 };
 
@@ -79,3 +79,5 @@ export const MulterStorageEngine = (opts: Options) => {
     storage: storageEngine(opts),
   });
 };
+
+export { CustomFileResult, FileType, Request };
