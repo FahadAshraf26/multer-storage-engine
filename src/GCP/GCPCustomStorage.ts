@@ -19,10 +19,11 @@ class GCPCustomStorageEngine implements multer.StorageEngine {
   private validator?: validatorFn;
 
   constructor() {
+    const bucketName = String(process.env.GCP_BUCKET_NAME);
     this.bucket = new Storage({
       projectId: process.env.GCP_PROJECT_ID,
       keyFilename: process.env.GCP_KEY_FILE_NAME,
-    }).bucket(process.env.GCP_BUCKET_NAME as string);
+    }).bucket(bucketName);
     this.nameFn = defaultNameFn;
   }
 
