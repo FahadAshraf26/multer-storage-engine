@@ -9,10 +9,6 @@ export type Options = {
   storage: string;
 };
 
-export enum StorageType {
-  GCP = 'GPC',
-}
-
 export interface CustomFileResult extends Partial<FileType> {
   name: string;
   bucket: string;
