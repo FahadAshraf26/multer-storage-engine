@@ -7,8 +7,6 @@ enum StorageType {
   GCP = 'GCP',
 }
 export const storageEngine = (opts: Options) => {
-  console.log(typeof StorageType);
-
   if (opts.storage === StorageType.GCP) {
     return new GCPCustomStorageEngine();
   }
