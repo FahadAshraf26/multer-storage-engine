@@ -15,7 +15,9 @@ or
 ### GCP
 
 GCP_PROJECT_ID = 'your gcp project id'
+
 GCP_KEY_FILE_NAME = 'your json key file path'
+
 GCP_BUCKET_NAME = 'your gcp bucket name'
 
 ## Usage
