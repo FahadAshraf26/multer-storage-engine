@@ -1,12 +1,7 @@
-import { MulterStorageEngine } from './../src/index';
-const bucket = 'your bucket name';
-const projectId = 'your projectId';
-const keyFilename = 'your json file path';
+import { MulterStorageEngine, StorageType } from './../src/index';
 
 const upload = MulterStorageEngine({
-  bucket,
-  projectId,
-  keyFilename,
+  storage: StorageType.GCP,
 });
 
-upload.single("example");
+upload.single('example');
