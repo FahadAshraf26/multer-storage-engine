@@ -1,4 +1,5 @@
 # multer-cloud-storage-engine
+
 multer-cloud-storage-engine is a [multer](https://github.com/expressjs/multer) custom store engine for Google Cloud Storage service.
 
 ## Installation
@@ -9,19 +10,28 @@ or
 
     yarn add multer-cloud-storage-engine
 
+## SET_ENVIRONMENT_VARIABLES
+
+### GCP
+
+GCP_PROJECT_ID = 'your gcp project id'
+GCP_KEY_FILE_NAME = 'your json key file path'
+GCP_BUCKET_NAME = 'your gcp bucket name'
+
 ## Usage
+
 ### ES6
-    import { MulterStorageEngine } from 'multer-cloud-storage-engine';
+
+    import { MulterStorageEngine, StorageType } from './../src/index';
+    import express from 'express';
 
     const app = express();
 
-    const uploadHandler = MulterStorageEngine({
-      bucket: "your bucket name",
-      projectId: "your gcp projectId" ,
-      keyFilename: "your json key file path",
+    const upload = MulterStorageEngine({
+        storage: StorageType.GCP,
     });
 
-    app.post('/upload', uploadHandler.any(), (req, res) => {
+    app.post('/upload', upload.single('profileImage'), (req, res) => {
         console.log(req.files);
         res.json(req.files);
     });
