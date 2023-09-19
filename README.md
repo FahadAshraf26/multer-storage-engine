@@ -14,11 +14,11 @@ or
 
 ### GCP
 
-GCP_PROJECT_ID = 'your gcp project id'
+GCP_PROJECT_ID =YOUR_GCP_PROJECT_ID
 
-GCP_KEY_FILE_NAME = 'your json key file path'
+GCP_KEY_FILE_NAME =YOUR_JSON_KEY_FILE_PATH
 
-GCP_BUCKET_NAME = 'your gcp bucket name'
+GCP_BUCKET_NAME =YOUR_GCP_BUCKET_NAME
 
 ## Usage
 
