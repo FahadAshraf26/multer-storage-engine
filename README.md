@@ -24,7 +24,7 @@ GCP_BUCKET_NAME =YOUR_GCP_BUCKET_NAME
 
 ### ES6
 
-    import { MulterStorageEngine, StorageType } from './../src/index';
+    import { MulterStorageEngine, StorageType } from 'multer-cloud-storage-engine';
     import express from 'express';
 
     const app = express();
