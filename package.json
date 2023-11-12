@@ -1,6 +1,6 @@
 {
   "name": "multer-cloud-storage-engine",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Multer storage engine for GCP. Images upload through multer will directly upload to GCP",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
