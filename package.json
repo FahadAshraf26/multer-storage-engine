@@ -18,7 +18,10 @@
     "Storage Engine",
     "Multer Storage Engine",
     "GCP",
-    "Cloud"
+    "Cloud",
+    "Custom Storage Engine",
+    "Nodejs multer custom storage",
+    "multer-cloud-storage-engine"
   ],
   "engines": {
     "node": ">=18.0.0",
