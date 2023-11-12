@@ -1,6 +1,6 @@
 # multer-cloud-storage-engine
 
-multer-cloud-storage-engine is a [multer](https://github.com/expressjs/multer) custom store engine for Google Cloud Storage service.
+multer-cloud-storage-engine is a [multer](https://github.com/expressjs/multer) [custom store engine](https://github.com/expressjs/multer/blob/master/StorageEngine.md) for Google Cloud Storage service.
 
 ## Installation
 
